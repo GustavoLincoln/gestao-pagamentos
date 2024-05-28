@@ -1,4 +1,4 @@
-// File: E:\Faculdade\Projetos\gestao-pagamentos\app\relatorios\page.tsx
+// File: C:\Users\lucas\GitRepo\gestao-pagamentos\app\relatorios\page.tsx
 import * as entry from '../../../../app/relatorios/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
