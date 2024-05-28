@@ -1,5 +1,5 @@
 {
-  "/relatorios/page": "app/relatorios/page.js",
-  "/CadastroEmpresa/page": "app/CadastroEmpresa/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/LancamentoValores/page": "app/LancamentoValores/page.js",
+  "/CadastroEmpresa/page": "app/CadastroEmpresa/page.js"
 }
