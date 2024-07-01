@@ -1,33 +1,28 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/LancamentoValores/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/LancamentoValores/page.css",
-      "static/chunks/app/LancamentoValores/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
-    "/relatorios/page": [
+    "/Login/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/relatorios/page.js"
+      "static/css/app/Login/page.css",
+      "static/chunks/app/Login/page.js"
     ],
-    "/CadastroEmpresa/page": [
+    "/faq/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/CadastroEmpresa/page.css",
-      "static/chunks/app/CadastroEmpresa/page.js"
+      "static/css/app/faq/page.css",
+      "static/chunks/app/faq/page.js"
     ]
   }
 }
