@@ -58,11 +58,9 @@ export default function Login() {
         </Row>
         <div className="buttons">
           <Button className="confirm" type="submit">Login</Button>
-          <Button className="google-login" onClick={() => {/* Lógica de login com Google */}}>Login com Google</Button>
-          <Button className="microsoft-login" onClick={() => {/* Lógica de login com Microsoft */}}>Login com Microsoft</Button>
         </div>
       </Form>
-      <Link href={"./cadastro"} className="register">
+      <Link href={"./CadastroUsuario"} className="register">
         <p>Não tem uma conta? Cadastre-se aqui</p>
       </Link>
     </main>
