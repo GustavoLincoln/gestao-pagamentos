@@ -1,1 +1,8 @@
-{}
+{
+  "/not-found": "app/not-found.js",
+  "/Login/page": "app/Login/page.js",
+  "/page": "app/page.js",
+  "/CadastroUsuario/page": "app/CadastroUsuario/page.js",
+  "/faq/page": "app/faq/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}

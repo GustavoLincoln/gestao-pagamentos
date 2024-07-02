@@ -1,0 +1,56 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./app/CadastroUsuario/CadastroUsuario.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+main {
+    color: #000;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .logo h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  
+  .header h2 {
+    font-size: 30px;
+  }
+  
+  .header .return {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .buttons .cancel {
+    background-color: #ef4444;
+    border-color: #ef4444;
+  }
+  
+  .buttons .cancel:hover {
+    background-color: #b91c1c;
+    border-color: #b91c1c;
+  }
