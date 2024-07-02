@@ -12,22 +12,35 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/LancamentoValores/page": [
+    "/faq/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/LancamentoValores/page.css",
-      "static/chunks/app/LancamentoValores/page.js"
-    ],
-    "/relatorios/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/relatorios/page.js"
+      "static/css/app/faq/page.css",
+      "static/chunks/app/faq/page.js"
     ],
     "/CadastroEmpresa/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/CadastroEmpresa/page.css",
       "static/chunks/app/CadastroEmpresa/page.js"
+    ],
+    "/Login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Login/page.css",
+      "static/chunks/app/Login/page.js"
+    ],
+    "/LancamentoValores/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/LancamentoValores/page.css",
+      "static/chunks/app/LancamentoValores/page.js"
+    ],
+    "/CadastroUsuario/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/CadastroUsuario/page.css",
+      "static/chunks/app/CadastroUsuario/page.js"
     ]
   }
 }

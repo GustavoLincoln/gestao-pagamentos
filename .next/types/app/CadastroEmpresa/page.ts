@@ -1,4 +1,4 @@
-// File: C:\Users\lucas\GitRepo\gestao-pagamentos\app\CadastroEmpresa\page.tsx
+// File: C:\Users\User\Documents\GitHub\gestao-pagamentos\app\CadastroEmpresa\page.tsx
 import * as entry from '../../../../app/CadastroEmpresa/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
