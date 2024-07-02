@@ -1,5 +1,8 @@
 {
-  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
-  "/faq/page": "app/faq/page.js"
+  "/Login/page": "app/Login/page.js",
+  "/CadastroEmpresa/page": "app/CadastroEmpresa/page.js",
+  "/LancamentoValores/page": "app/LancamentoValores/page.js",
+  "/CadastroUsuario/page": "app/CadastroUsuario/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
