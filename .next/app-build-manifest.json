@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "pages": {
     "/page": [
       "static/chunks/webpack.js",
@@ -43,4 +44,7 @@
       "static/chunks/app/CadastroUsuario/page.js"
     ]
   }
+=======
+  "pages": {}
+>>>>>>> Stashed changes
 }

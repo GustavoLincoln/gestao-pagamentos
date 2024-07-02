@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   "/page": "app/page.js",
   "/Login/page": "app/Login/page.js",
@@ -6,3 +7,6 @@
   "/CadastroUsuario/page": "app/CadastroUsuario/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }
+=======
+{}
+>>>>>>> Stashed changes
