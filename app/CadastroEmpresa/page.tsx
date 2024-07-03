@@ -19,9 +19,7 @@ export default function CadastroEmpresa() {
         </div>
         <h2>Cadastro de Empresa</h2>
         <Link href={"./"} className="return">
-          <span className="material-symbols-outlined">
-            keyboard_return
-          </span>
+          <img src="./return.png" alt="" height={20} width={20}/>
           <p>Voltar</p>
         </Link>
       </div>

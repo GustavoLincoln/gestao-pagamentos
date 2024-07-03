@@ -30,9 +30,7 @@ export default function LancamentoValores() {
         </div>
         <h2>Lançamento de Valores</h2>
         <Link href={"./"} className="return">
-          <span className="material-symbols-outlined">
-            keyboard_return
-          </span>
+          <img src="./return.png" alt="" height={20} width={20} />
           <p>Voltar</p>
         </Link>
       </div>
@@ -66,7 +64,7 @@ export default function LancamentoValores() {
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           </Form.Group>
           <Form.Group className="mb-3">
-          <Form.Label>Tipo Gasto</Form.Label>
+            <Form.Label>Tipo Gasto</Form.Label>
             <Form.Check
               required
               label="Gastro Fixo"
@@ -140,6 +138,8 @@ export default function LancamentoValores() {
         <div className="buttons">
           <Button className="confirm" type="submit">Confirmar</Button>
           <Button className="cancel" type="reset">Cancelar</Button>
+          <Button className="confirm" type="reset">Alterar</Button>
+          <Button className="cancel" type="reset">Excluir</Button>
         </div>
       </Form>
     </main>
