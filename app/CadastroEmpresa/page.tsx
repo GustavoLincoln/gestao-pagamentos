@@ -10,17 +10,6 @@ import './CadastroEmpresa.css'
 import Link from "next/link";
 
 export default function CadastroEmpresa() {
-  const [validated, setValidated] = useState(false);
-
-  const handleSubmit = (event: any) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
-    setValidated(true);
-  };
   return (
     <main>
       <div className="header">
@@ -37,7 +26,7 @@ export default function CadastroEmpresa() {
         </Link>
       </div>
 
-      <Form noValidate validated={validated} onSubmit={handleSubmit}>
+      <Form>
         <Row className="mb-3">
           <Form.Group as={Col} md="2" controlId="validationCustom01">
             <Form.Label>CNPJ</Form.Label>
@@ -180,6 +169,8 @@ export default function CadastroEmpresa() {
         <div className="buttons">
           <Button className="confirm" type="submit">Confirmar</Button>
           <Button className="cancel" type="reset">Cancelar</Button>
+          <Button className="confirm" type="reset">Alterar</Button>
+          <Button className="cancel" type="reset">Excluir</Button>
         </div>
       </Form>
     </main>

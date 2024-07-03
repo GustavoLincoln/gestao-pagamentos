@@ -8,6 +8,10 @@ export interface Empresa {
   inscricaoEstadual?: string,
   dataAbertura?: string,
   email?: string,
+  logradouro?: string,
+  cidade?: string,
+  estado?: string,
+  pais?: string,
   complemento?: string,
   numero?: number,
   telefone?: string,
@@ -23,7 +27,7 @@ interface empresaStore{
   patchEmpresa: (empresa: Empresa) => void,
   deleteEmpresa: (cnpj: string) => void,
 
-  getSaleData: (id: string) => void,
+  teste: (id: string) => void,
 }
 
 export const empresaStore = create<empresaStore>((set) => {
@@ -33,13 +37,13 @@ export const empresaStore = create<empresaStore>((set) => {
     empresaEscolhida: {cnpj:""},
     empresas: [],
 
-    getSaleData: (id) => set((state) => ({
+    teste: (id) => set((state) => ({
       empresaEscolhida: state.empresas.filter(item => item.cnpj == id)[0]
     })),
     
     getEmpresa: async () => {
       try {
-        const response = await fetch('http://localhost:4000/api/usuario/getAll',
+        const response = await fetch('http://localhost:5168/api/Empresa',
           { method: 'GET', });
         const data = await response.json();
         if (data && data.length > 0) {
@@ -50,7 +54,7 @@ export const empresaStore = create<empresaStore>((set) => {
       }
     },
     postEmpresa: async (empresa) => {
-      await fetch('http://localhost:4000/api/usuario/create', {
+      await fetch('http://localhost:5168/api/Empresa', {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -63,7 +67,7 @@ export const empresaStore = create<empresaStore>((set) => {
         })
     },
     patchEmpresa: async (empresa) => {
-      await fetch('http://localhost:4000/api/usuario/update', {
+      await fetch('http://localhost:5168/api/Empresa', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -77,7 +81,7 @@ export const empresaStore = create<empresaStore>((set) => {
         });
     },
     deleteEmpresa: async (cnpj) => {
-      await fetch(`http://localhost:4000/api/usuario/delete/${cnpj}`, {
+      await fetch(`http://localhost:5168/api/Empresa/${cnpj}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

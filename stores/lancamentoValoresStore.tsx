@@ -1,17 +1,18 @@
 import { create, useStore } from 'zustand';
 
 export interface LancamentoValores {
-  cnpj: string,
-  razaoSocial?: string,
-  nomeFantasia?: string,
-  inscricaoMunicipal?: string,
-  inscricaoEstadual?: string,
-  dataAbertura?: string,
-  email?: string,
-  complemento?: string,
-  numero?: number,
-  telefone?: string,
-  dataCadastro?: string
+  id: number,
+  numLancamento?: number,
+  empresa?: number,
+  tipoLancamento?: string,
+  tipoFixo?: boolean,
+  descricao?: string,
+  valor?: number,
+  tipoPagamento?: string,
+  vencimento?: string,
+  parcelas?: number,
+  status?: boolean,
+  dataLancamento?: string
 }
 
 interface lancamentoValorStore{
@@ -21,25 +22,25 @@ interface lancamentoValorStore{
   getLancamentoValores: (lancamentoValor: LancamentoValores) => void,
   postLancamentoValores: (lancamentoValor: LancamentoValores) => void,
   patchLancamentoValores: (lancamentoValor: LancamentoValores) => void,
-  deleteLancamentoValores: (cnpj: string) => void,
+  deleteLancamentoValores: (id: number) => void,
 
-  getSaleData: (id: string) => void,
+  teste: (id: number) => void,
 }
 
 export const empresaStore = create<lancamentoValorStore>((set) => {
   return {
 
-    lancamentoValor: {cnpj:""},
-    lancamentoValorEscolhido: {cnpj:""},
+    lancamentoValor: {id:0},
+    lancamentoValorEscolhido: {id:0},
     lancamentoValores: [],
 
-    getSaleData: (id) => set((state) => ({
-      lancamentoValorEscolhido: state.lancamentoValores.filter(item => item.cnpj == id)[0]
+    teste: (id) => set((state) => ({
+      lancamentoValorEscolhido: state.lancamentoValores.filter(item => item.id == id)[0]
     })),
     
     getLancamentoValores: async () => {
       try {
-        const response = await fetch('http://localhost:4000/api/usuario/getAll',
+        const response = await fetch('http://localhost:5168/api/LancamentoValores',
           { method: 'GET', });
         const data = await response.json();
         if (data && data.length > 0) {
@@ -50,7 +51,7 @@ export const empresaStore = create<lancamentoValorStore>((set) => {
       }
     },
     postLancamentoValores: async (lancamentoValor) => {
-      await fetch('http://localhost:4000/api/usuario/create', {
+      await fetch('http://localhost:5168/api/LancamentoValores', {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
@@ -63,7 +64,7 @@ export const empresaStore = create<lancamentoValorStore>((set) => {
         })
     },
     patchLancamentoValores: async (lancamentoValor) => {
-      await fetch('http://localhost:4000/api/usuario/update', {
+      await fetch('http://localhost:5168/api/LancamentoValores', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -76,8 +77,8 @@ export const empresaStore = create<lancamentoValorStore>((set) => {
           console.error('Erro:', error);
         });
     },
-    deleteLancamentoValores: async (cnpj) => {
-      await fetch(`http://localhost:4000/api/usuario/delete/${cnpj}`, {
+    deleteLancamentoValores: async (id) => {
+      await fetch(`http://localhost:5168/api/LancamentoValores/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
