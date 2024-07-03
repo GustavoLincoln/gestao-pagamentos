@@ -2,7 +2,7 @@
 
 Trabalho realizado na materia de Mapeamento de Processos de Software ministrado pelo professor Evandro
 
-#integrantes
+# Integrantes
 
 Gustavo Henrique Lincoln
 Gustavo Henrique Szesz
